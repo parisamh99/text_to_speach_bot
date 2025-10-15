@@ -3,7 +3,7 @@ import os
 import logging
 from gtts import gTTS
 
-API_TOKEN ='8123364174:AAH1Fx4X9hfxBbVL-0LmMS8vB0ZFAPgmsfk'
+API_TOKEN = os.environ.get("API_TOKEN")
 
 bot = telebot.TeleBot(API_TOKEN)    
 
